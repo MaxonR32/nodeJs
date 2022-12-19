@@ -1,4 +1,5 @@
 const keys = require('../keys')
+let a = 9;
 module.exports = function(email, token) {
 	return {
 		to: email,
