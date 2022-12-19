@@ -1,5 +1,5 @@
 const keys = require('../keys')
-
+let someData = 'data for me'
 module.exports = function(email) {
 	return {
 		to: email, // Sender address
