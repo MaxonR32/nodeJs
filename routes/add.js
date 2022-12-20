@@ -15,6 +15,8 @@ router.get('/', auth, (req, res) => {
 router.post('/', auth, validator.courseValidator, async (req, res) => {
 	const errors = validationResult(req)
 
+	console.log('this is new data')
+
 	if(!errors.isEmpty()) {
 		return res.status(422).render('add', {
 			title: 'Add page',
